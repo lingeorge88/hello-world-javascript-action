@@ -1,4 +1,4 @@
-name: 'Emoji Generator
+name: 'Emoji Generator'
 description: 'Generates an emoji when someone opens a pull request'
 author: 'George Lin - lingeorge88'
 inputs:
