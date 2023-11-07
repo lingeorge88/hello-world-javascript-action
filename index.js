@@ -13,7 +13,7 @@ async function run() {
 
     const pullRequestNumber = context.payload.pull_request.number;
     const prTitle = context.payload.pull_request.title;
-    const octokit = github.getOctokit(githubToken);
+    const octokit = new github.GitHub(githubToken);
     const message = generateEmote(prTitle);
 
     octokit.issues.createComment({
